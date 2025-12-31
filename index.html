@@ -53,7 +53,83 @@ nav a:hover{color:#38bdf8}
 .close{color:#38bdf8;cursor:pointer;margin-top:25px;display:inline-block}
 
 footer{text-align:center;padding:15px;background:#020617;color:#94a3b8}
+/* ---------- RESPONSIVE DESIGN ---------- */
+@media (max-width: 768px) {
+
+  /* Navbar */
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  /* Profile section */
+  .profile-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-pic {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 15px;
+  }
+
+  /* Section padding */
+  .section {
+    padding: 50px 15px;
+  }
+
+  /* Cards */
+  .card {
+    padding: 18px;
+  }
+
+  /* Skills */
+  .skills {
+    justify-content: center;
+  }
+
+  /* Modal content */
+  .modal-content {
+    width: 95%;
+    padding: 20px;
+  }
+
+  /* Titles */
+  .title {
+    font-size: 26px;
+  }
+}
+.menu-btn {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #e5e7eb;
+}
+
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+
+  nav div:last-child {
+    display: none;
+    width: 100%;
+  }
+
+  nav div.active {
+    display: block;
+  }
+}
+
+
 </style>
+
 </head>
 
 <body>
@@ -72,6 +148,7 @@ footer{text-align:center;padding:15px;background:#020617;color:#94a3b8}
         <a href="#links">Links</a>
         <a href="#contact">Contact</a>
       </div>
+      <span class="menu-btn" onclick="toggleMenu()">☰</span>
     </nav>
   </div>
 </header>
@@ -537,6 +614,7 @@ and increased overall support efficiency.
 `
 };
 
+
 function openModal(key){
   document.getElementById("modalContent").innerHTML = content[key];
   document.getElementById("modal").style.display = "flex";
@@ -545,7 +623,13 @@ function closeModal(){
   document.getElementById("modal").style.display = "none";
 }
 </script>
+<script>
+function toggleMenu() {
+  document.querySelector("nav div:last-child").classList.toggle("active");
+}
+</script>
   
 
 </body>
 </html>
+
