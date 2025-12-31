@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Yashwanth B S | Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,sans-serif}
+body{background:#0f172a;color:#e5e7eb;line-height:1.75}
+.container{width:90%;max-width:1100px;margin:auto}
+.section{padding:70px 0}
+.title{font-size:32px;color:#38bdf8;margin-bottom:30px;text-align:center}
+.card{background:#020617;padding:24px;border-radius:14px;border:1px solid #1e293b;margin-bottom:20px}
+
+/* HEADER */
+header{background:#020617;position:sticky;top:0;z-index:100}
+nav{display:flex;justify-content:space-between;align-items:center;padding:15px 0}
+nav a{color:#e5e7eb;text-decoration:none;margin-left:18px}
+nav a:hover{color:#38bdf8}
+.logo{font-size:24px}
+.logo span{color:#38bdf8}
+
+/* INTRO */
+.profile-wrapper{display:flex;gap:30px;align-items:center}
+.profile-pic{
+  width:160px;height:160px;border-radius:50%;
+  object-fit:cover;border:4px solid #38bdf8
+}
+
+/* SKILLS */
+.skill-group{margin-bottom:30px}
+.skill-group h3{color:#38bdf8;margin-bottom:12px}
+.skills{display:flex;flex-wrap:wrap;gap:10px}
+.skill{padding:10px 14px;border:1px solid #1e293b;border-radius:8px}
+
+/* PROJECT */
+.project{cursor:pointer}
+.project h3{color:#38bdf8}
+
+/* MODAL */
+.modal{
+  position:fixed;top:0;left:0;width:100%;height:100%;
+  background:rgba(0,0,0,.85);display:none;
+  align-items:center;justify-content:center
+}
+.modal-content{
+  background:#020617;padding:30px;border-radius:14px;
+  max-width:950px;width:95%;max-height:90%;overflow:auto
+}
+.modal-content h2{color:#38bdf8}
+.modal-content h4{margin-top:16px;color:#94a3b8}
+.close{color:#38bdf8;cursor:pointer;margin-top:25px;display:inline-block}
+
+footer{text-align:center;padding:15px;background:#020617;color:#94a3b8}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">Yashwanth<span>.</span></div>
+      <div>
+        <a href="#intro">Intro</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#links">Links</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- INTRO -->
+<section id="intro" class="section">
+  <div class="container">
+    <div class="profile-wrapper">
+      <img src="yash1.JPG" class="profile-pic">
+      <div>
+        <h1>Hi, I'm <span style="color:#38bdf8">Yashwanth B S</span></h1>
+        <h3></h3>
+        <p>
+          Computer Science graduate with strong skills in Data Analysis, Backend Development, and Full-Stack fundamentals. Experienced in working with Python, SQL, Power BI, Java, and REST APIs to analyze data and build efficient, scalable applications.
+Strong understanding of data structures, algorithms, and database design, with hands-on experience in end-to-end project development. Passionate about applying analytical thinking and technical expertise to solve real-world business problems and continuously upskill in modern technologies.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <div class="container">
+    <div class="title">Skills</div>
+
+    <!-- Programming Languages -->
+    <div class="skill-group">
+      <h3>1. Programming Languages</h3>
+      <div class="skills">
+        <div class="skill">Python</div>
+        <div class="skill">Java</div>
+        <div class="skill">SQL</div>
+        <div class="skill">JavaScript</div>
+      </div>
+    </div>
+
+    <!-- Backend Development -->
+    <div class="skill-group">
+      <h3>2. Backend Development</h3>
+      <div class="skills">
+        <div class="skill">Node.js</div>
+        <div class="skill">Express.js</div>
+        <div class="skill">RESTful APIs</div>
+      </div>
+    </div>
+
+    <!-- Data Analysis -->
+    <div class="skill-group">
+      <h3>3. Data Analysis</h3>
+      <div class="skills">
+        <div class="skill">Data Cleaning</div>
+        <div class="skill">Exploratory Data Analysis (EDA)</div>
+        <div class="skill">Power BI</div>
+        <div class="skill">Excel (Advanced)</div>
+        <div class="skill">Data Visualization</div>
+      </div>
+    </div>
+
+    <!-- Machine Learning -->
+    <div class="skill-group">
+      <h3>4. Machine Learning</h3>
+      <div class="skills">
+        <div class="skill">Pandas</div>
+        <div class="skill">NumPy</div>
+        <div class="skill">Supervised Learning</div>
+        <div class="skill">Unsupervised Learning</div>
+        <div class="skill">Model Evaluation</div>
+        <div class="skill">Feature Engineering</div>
+        <div class="skill">Scikit-learn</div>
+      </div>
+    </div>
+
+    <!-- Data Structures & Algorithms -->
+    <div class="skill-group">
+      <h3>5. Data Structures & Algorithms</h3>
+      <div class="skills">
+        <div class="skill">Arrays</div>
+        <div class="skill">Strings</div>
+        <div class="skill">Linked Lists</div>
+        <div class="skill">Stacks & Queues</div>
+        <div class="skill">Recursion</div>
+        <div class="skill">Sorting & Searching</div>
+      </div>
+    </div>
+
+    <!-- Databases -->
+    <div class="skill-group">
+      <h3>6. Databases</h3>
+      <div class="skills">
+        <div class="skill">MySQL</div>
+        <div class="skill">PostgreSQL</div>
+        <div class="skill">Database Design</div>
+      </div>
+    </div>
+
+    <!-- Tools & Platforms -->
+    <div class="skill-group">
+      <h3>7. Tools & Platforms</h3>
+      <div class="skills">
+        <div class="skill">Git</div>
+        <div class="skill">GitHub</div>
+        <div class="skill">Power BI Service</div>
+        <div class="skill">VS Code</div>
+        <div class="skill">Jupyter Notebook</div>
+      </div>
+    </div>
+
+
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+  <div class="container">
+    <div class="title">Experience</div>
+    <div class="card project" onclick="openModal('nlp')">
+      <h3>AI Data Analyst Intern –Rooman Technologies Pvt(Sep-2024--Feb-2025)<br>NLP-Based Healthcare Data Classification</h3>
+      <p>Click to view full project explanation</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="container">
+    <div class="title">Projects</div>
+
+    <div class="card project" onclick="openModal('inventory')">
+      <h3>Enterprise Inventory & Order Management System</h3>
+      <p>Click to view full project explanation</p>
+    </div>
+
+    <div class="card project" onclick="openModal('retail')">
+      <h3>Retail Sales Analysis & Forecasting</h3>
+      <p>Click to view full project explanation</p>
+    </div>
+
+    <div class="card project" onclick="openModal('bank')">
+      <h3>Bank Transaction Data Analysis</h3>
+      <p>Click to view full project explanation</p>
+    </div>
+
+    <div class="card project" onclick="openModal('ai')">
+      <h3>AI-Driven Support Ticket Routing System</h3>
+      <p>Click to view full project explanation</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- EDUCATION -->
+<section id="education" class="section">
+  <div class="container">
+    <div class="title">Education</div>
+    <div class="card"><b>B.E – CSE (Data Science)</b><br>MVJ College of Engineering | 2021–2025 | CGPA: 8.9</div>
+    <div class="card"><b>PUC – PCMCS</b><br>Narayana PU College | 97%</div>
+    <div class="card"><b>SSLC</b><br>St. Anne’s High School | 86.88%</div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="section">
+  <div class="container">
+    <div class="title">Certifications</div>
+
+    <div class="card">
+      AI & Data Science Internship – Rooman Technologies
+    </div>
+
+    <div class="card">
+      Python for Data Science – Coursera
+    </div>
+
+    <div class="card">
+      SQL & Database Management – Coursera
+    </div>
+
+    <div class="card">
+      Data Structures & Algorithms (DSA) – Udemy
+    </div>
+
+    <div class="card">
+      Machine Learning Fundamentals – Coursera
+    </div>
+
+    <div class="card">
+      Frontend Web Development (HTML, CSS, JavaScript) – Udemy
+    </div>
+  </div>
+</section>
+
+<!-- LINKS -->
+<section id="links" class="section">
+  <div class="container">
+    <div class="title">Links</div>
+
+    <div class="card">
+      LinkedIn:
+      <a href="https://www.linkedin.com/in/yashwanth-b-s-0538922a1" target="_blank">
+        https://www.linkedin.com/in/yashwanth-b-s-0538922a1
+      </a>
+    </div>
+
+    <div class="card">
+      GitHub:
+      <a href="https://github.com/Yashwanthbs2002" target="_blank">
+        https://github.com/Yashwanthbs2002
+      </a>
+    </div>
+
+    <div class="card">
+      HackerRank:
+      <a href="https://www.hackerrank.com/profile/bsyashwanth2002" target="_blank">
+        https://www.hackerrank.com/profile/bsyashwanth2002
+      </a>
+    </div>
+  </div>
+</section>
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="title">Contact Me</div>
+
+    <div class="card">
+      <b>Email:</b>
+      <a href="mailto:bsyashwanth2002@gmail.com">
+        bsyashwanth2002@gmail.com
+      </a>
+    </div>
+
+    <div class="card">
+      <b>Phone:</b> +91-9916293917
+    </div>
+
+    <div class="card">
+      <b>Location:</b> Bengaluru, Karnataka, India
+    </div>
+  </div>
+</section>
+
+
+
+<footer>© 2025 Yashwanth B S</footer>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+  <div class="modal-content" id="modalContent"></div>
+</div>
+
+<script>
+const content = {
+
+/* NLP */
+nlp: `
+<h2>NLP-Based Healthcare Data Classification</h2>
+<h4>Tech Stack</h4>
+<p>Python | NLP | Pandas | NumPy | Scikit-learn | NLTK | TF-IDF</p>
+
+<h4>Problem Statement</h4>
+<p>
+Healthcare organizations generate large volumes of unstructured textual data
+such as clinical notes, discharge summaries, and medical reports.
+Manual classification of this data is time-consuming, inconsistent, and prone
+to human error, making it difficult to extract insights efficiently.
+</p>
+
+<h4>Your Role</h4>
+<p>
+AI Data Analyst Intern – responsible for end-to-end NLP pipeline development,
+from raw text preprocessing to machine learning model evaluation.
+</p>
+
+<h4>Key Features</h4>
+<ul>
+<li>Collected and analyzed real-world healthcare text datasets</li>
+<li>Performed text cleaning, normalization, and deduplication</li>
+<li>Applied tokenization, stop-word removal, and lemmatization</li>
+<li>Converted text into numerical features using TF-IDF</li>
+<li>Built and trained machine learning classification models</li>
+<li>Evaluated models using accuracy, precision, recall, and confusion matrix</li>
+</ul>
+
+<h4>Technical Highlights</h4>
+<ul>
+<li>Handled noisy and unstructured medical text data</li>
+<li>Optimized feature extraction for better model performance</li>
+<li>Implemented modular and reusable NLP preprocessing pipeline</li>
+<li>Performed model tuning to improve classification accuracy</li>
+</ul>
+
+<h4>Impact / Outcome</h4>
+<p>
+Achieved approximately <b>85% classification accuracy</b> and reduced
+manual data processing effort by nearly <b>40%</b>.
+</p>
+
+<span class="close" onclick="closeModal()">Close</span>
+`,
+
+inventory: `
+<h2>Enterprise Inventory & Order Management System</h2>
+<h4>Tech Stack</h4>
+<p>Java | MySQL | REST APIs | Git | Postman</p>
+
+<h4>Problem Statement</h4>
+<p>
+Manual inventory and order tracking leads to stock mismatches, delayed order
+fulfillment, and poor data accuracy.
+</p>
+
+<h4>Your Role</h4>
+<p>
+Backend Developer – designed APIs, database schema, and business logic.
+</p>
+
+<h4>Key Features</h4>
+<ul>
+<li>Developed RESTful APIs to manage products, suppliers, customers, and orders</li>
+<li>Implemented CRUD operations for inventory and order lifecycle management</li>
+<li>Added order status tracking (Placed, Processed, Shipped, Delivered)</li>
+<li>Enabled role-based access for admin and staff users</li>
+</ul>
+
+<h4>Technical Highlights</h4>
+<ul>
+<li>Designed normalized MySQL database schema to reduce data redundancy</li>
+<li>Optimized SQL queries for faster data retrieval and reporting</li>
+<li>Implemented exception handling, input validation, and logging</li>
+<li>Followed MVC architecture and clean coding practices</li>
+</ul>
+
+<h4>Impact / Outcome</h4>
+<p>
+Improved inventory accuracy and reduced order processing errors through
+automated backend workflows.
+</p>
+
+<span class="close" onclick="closeModal()">Close</span>
+`,
+
+retail: `
+<h2>Retail Sales Analysis & Forecasting</h2>
+<h4>Tech Stack</h4>
+<p>Python | Pandas | NumPy | Excel | Power BI</p>
+
+<h4>Problem Statement</h4>
+<p>
+Retail businesses often struggle to understand sales trends, seasonal demand,
+and product performance due to scattered and unstructured data.
+This results in poor inventory planning and missed revenue opportunities.
+</p>
+
+<h4>Your Role</h4>
+<p>
+Data Analyst – responsible for data cleaning, exploratory data analysis,
+trend identification, and dashboard development.
+</p>
+
+<h4>Key Features</h4>
+<ul>
+<li>Cleaned and preprocessed raw retail sales datasets</li>
+<li>Performed exploratory data analysis to identify trends and seasonality</li>
+<li>Analyzed category-wise and time-based sales performance</li>
+<li>Built interactive dashboards for KPI monitoring</li>
+</ul>
+
+<h4>Technical Highlights</h4>
+<ul>
+<li>Handled missing and inconsistent data using Pandas</li>
+<li>Performed statistical analysis to understand sales patterns</li>
+<li>Designed Power BI dashboards for business stakeholders</li>
+</ul>
+
+<h4>Impact / Outcome</h4>
+<p>
+Enabled data-driven decision-making by providing clear insights into
+sales performance, demand patterns, and seasonal trends.
+</p>
+
+<span class="close" onclick="closeModal()">Close</span>
+`,
+
+bank: `
+<h2>Bank Transaction Data Analysis</h2>
+<h4>Tech Stack</h4>
+<p>SQL | Python | Pandas | Excel</p>
+
+<h4>Problem Statement</h4>
+<p>
+Banks process millions of transactions daily, making manual analysis
+inefficient and unreliable.
+</p>
+
+<h4>Your Role</h4>
+<p>
+Data Analyst – responsible for querying, processing, and analyzing
+large transactional datasets.
+</p>
+
+<h4>Key Features</h4>
+<ul>
+<li>Queried high-volume transaction data using SQL</li>
+<li>Analyzed customer spending patterns and transaction frequency</li>
+<li>Identified abnormal and high-risk transaction behavior</li>
+<li>Generated analytical summaries for monitoring</li>
+</ul>
+
+<h4>Technical Highlights</h4>
+<ul>
+<li>Used SQL joins, aggregations, and filters for analysis</li>
+<li>Processed large datasets using Python and Pandas</li>
+<li>Ensured data accuracy and consistency</li>
+</ul>
+
+<h4>Impact / Outcome</h4>
+<p>
+Improved transaction monitoring and provided insights into customer behavior.
+</p>
+
+<span class="close" onclick="closeModal()">Close</span>
+`,
+
+ai: `
+<h2>AI-Driven Support Ticket Routing System</h2>
+<h4>Tech Stack</h4>
+<p>Python | FastAPI | NLP | Machine Learning | SQL</p>
+
+<h4>Problem Statement</h4>
+<p>
+Manual triaging of support tickets causes delays, SLA violations,
+and inefficient resource utilization.
+</p>
+
+<h4>Your Role</h4>
+<p>
+Backend & AI Developer – responsible for API development,
+ML integration, and workflow design.
+</p>
+
+<h4>Key Features</h4>
+<ul>
+<li>Built REST APIs for ticket ingestion and lifecycle management</li>
+<li>Applied NLP for ticket classification and sentiment analysis</li>
+<li>Predicted ticket priority and urgency using ML models</li>
+<li>Automated routing of tickets to appropriate support teams</li>
+</ul>
+
+<h4>Technical Highlights</h4>
+<ul>
+<li>Integrated ML models with backend APIs</li>
+<li>Designed scalable backend architecture</li>
+<li>Ensured secure and reliable ticket processing</li>
+</ul>
+
+<h4>Impact / Outcome</h4>
+<p>
+Reduced response time, improved SLA compliance,
+and increased overall support efficiency.
+</p>
+
+<span class="close" onclick="closeModal()">Close</span>
+`
+};
+
+function openModal(key){
+  document.getElementById("modalContent").innerHTML = content[key];
+  document.getElementById("modal").style.display = "flex";
+}
+function closeModal(){
+  document.getElementById("modal").style.display = "none";
+}
+</script>
+  
+
+</body>
+</html>
